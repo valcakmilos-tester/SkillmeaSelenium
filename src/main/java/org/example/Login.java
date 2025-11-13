@@ -1,19 +1,17 @@
 package org.example;
 
-
-import org.junit.*;
-import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.*;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class Login {
-  private WebDriver driver;
+private WebDriver driver;
 
-
-  @Before
-  public void setUp() {
+  @BeforeAll
+  public static void setUp() {
     System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Desktop\\ProgramovanieKody\\SkillmeaOOP2\\SkilmeaBDD\\SkillmeaSelenium\\SkillmeaSelenium\\src\\main\\resources\\chromedriver.exe");
     driver = new ChromeDriver();
   }
