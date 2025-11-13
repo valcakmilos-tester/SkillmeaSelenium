@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 public class Login {
-private WebDriver driver;
+private static WebDriver driver;
 
   @BeforeAll
   public static void setUp() {
