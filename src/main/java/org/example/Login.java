@@ -1,15 +1,12 @@
 package org.example;
 
-import java.util.regex.Pattern;
-import java.util.concurrent.TimeUnit;
+
 import org.junit.*;
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
-import org.apache.commons.io.FileUtils;
-import java.io.File;
+
 
 public class Login {
   private WebDriver driver;
@@ -17,7 +14,7 @@ public class Login {
 
   @Before
   public void setUp() {
-    System.setProperty("webdriver.chrome.driver", "");
+    System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Desktop\\ProgramovanieKody\\SkillmeaOOP2\\SkilmeaBDD\\SkillmeaSelenium\\SkillmeaSelenium\\src\\main\\resources\\chromedriver.exe");
     driver = new ChromeDriver();
   }
 
