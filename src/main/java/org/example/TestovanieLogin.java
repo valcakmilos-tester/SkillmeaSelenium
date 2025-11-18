@@ -19,10 +19,7 @@ private WebDriver driver;
 
   @BeforeEach
   public void setUp() {
-        // Toto plati len pre klasicke pridanie chrome driver
-      /* System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Desktop\\ProgramovanieKody\\SkillmeaOOP2\\SkilmeaBDD\\SkillmeaSelenium\\SkillmeaSelenium\\src\\main\\resources\\chromedriver.exe");
-    driver = new ChromeDriver();
-   */
+
       WebDriverManager.chromedriver().setup();
       driver = new ChromeDriver();
   }
