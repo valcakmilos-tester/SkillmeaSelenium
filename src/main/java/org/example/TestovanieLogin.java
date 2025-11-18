@@ -11,11 +11,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class TestovanieLogin {
-private static WebDriver driver;
+private WebDriver driver;
 
   @BeforeEach
   public void setUp() {
